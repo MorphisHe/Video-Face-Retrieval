@@ -11,7 +11,14 @@ Please read the notebook [image_search_team6_final.ipynb](/image_search_team6_fi
 
 ## Video Search 
 
-Please read the notebook [youtube_faces.ipynb](/youtube_faces.ipynb). 
+Please read the notebook [youtube_faces.ipynb](/youtube_faces.ipynb), you have access to it directly from Google Colab [here](https://drive.google.com/file/d/11L_2l6PmwSDR57qiSmEEaSL3eaeKz1V2/view?usp=sharing). Since embedding many videos into colab is not feasible, we went a head with showing the first frame of video to represent the video. We mannually picked 10 query videos and show the top 20 retrieval result of each queries. I have shown two set of results. First set is the result from the **(Use Average of Frame Embedding as Video Embedding Approach)** and 2nd set is te result of **(Pick Best Frame to Represent The Video Embedding Approach)**. Both set of results should be visible in the colab notebook under the **/Conclusion/Baseline Result** and **/Conclusion/Use Best Frame as Video Representation**.
+
+<br>
+
+We also stored the results in **[/images](/images)** folder. The **[/images/baseline_plots](/images/baseline_plots)** folder contains result for **(Use Average of Frame Embedding as Video Embedding Approach)** and **[images/best_frame_plots](/images/best_frame_plots)** folder contains result for **(Pick Best Frame to Represent The Video Embedding Approach)**. 
+
+- each query image are named using this convention: **QueryIndex-{index}_Label-{person name}_Num_Simlar_Videos-{number similar videos in dataset}_AP-{average precision score of the query results}.jpg**
+- each retreived images are named using this convention: **Rank-{rank#}_Label-{person name}_Dist-{euclidean distance score}_Match-{same label as query image or not}.jpg**
 
 ## Other Notebooks
 
