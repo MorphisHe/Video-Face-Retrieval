@@ -36,4 +36,4 @@ Pipeline | mAP1 | mAP2 | mAP3
 **FaceNet + Average Frame Embeddings for Video Embedding** | **1.0** |  **0.825**| **0.921**
 **FaceNet + Pick Best Frame as Video Embedding** | 0.954 |  0.767| 0.896
 **FaceNet + MLP Contrastive Learning** | 0.887 |  0.582| 0.804
-**FaceNet + RNN Learn to Aggregator Frame Embeddings** |  0.906 |  0.603| 0.825
+**FaceNet + RNN Contrastive Learning** |  0.906 |  0.603| 0.825
