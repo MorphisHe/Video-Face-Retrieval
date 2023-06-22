@@ -23,3 +23,17 @@ We also stored the results in **[/images](/images)** folder. The **[/images/base
 ## Other Notebooks
 
 We created some other notebooks in the process of writing the final one. They can show you our work in different stages, but please DO NOT consider them as final results. 
+
+## Benchmark
+- mAP1 = mAP of best 20 queries
+- mAP2 = mAP of whole dataset as queries and retrieve and ranking top 20 neighbors
+- mAP3 = mAP of whole dataset as queries and retrieve and ranking all neighbors
+
+<br>
+
+Pipeline | mAP1 | mAP2 | mAP3 
+--- | --- | --- | ---
+**FaceNet + Average Frame Embeddings for Video Embedding** | **1.0** |  **0.825**| **0.921**
+**FaceNet + Pick Best Frame as Video Embedding** | 0.954 |  0.767| 0.896
+**FaceNet + MLP Contrastive Learning** | 0.887 |  0.582| 0.804
+**FaceNet + RNN Learn to Aggregator Frame Embeddings** |  0.906 |  0.603| 0.825
